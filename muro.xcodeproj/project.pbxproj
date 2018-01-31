@@ -15,6 +15,7 @@
 		C31BC2962021219A0035FC54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C31BC2942021219A0035FC54 /* LaunchScreen.storyboard */; };
 		C31BC2A12021219A0035FC54 /* muroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31BC2A02021219A0035FC54 /* muroTests.swift */; };
 		C31BC2AC2021219A0035FC54 /* muroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31BC2AB2021219A0035FC54 /* muroUITests.swift */; };
+		C3C9CE99202258590081DDDC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C9CE98202258590081DDDC /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		C31BC2A72021219A0035FC54 /* muroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = muroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C31BC2AB2021219A0035FC54 /* muroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = muroUITests.swift; sourceTree = "<group>"; };
 		C31BC2AD2021219A0035FC54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3C9CE98202258590081DDDC /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				C31BC2922021219A0035FC54 /* Assets.xcassets */,
 				C31BC2942021219A0035FC54 /* LaunchScreen.storyboard */,
 				C31BC2972021219A0035FC54 /* Info.plist */,
+				C3C9CE98202258590081DDDC /* TableViewCell.swift */,
 			);
 			path = muro;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C31BC28E2021219A0035FC54 /* DetailViewController.swift in Sources */,
+				C3C9CE99202258590081DDDC /* TableViewCell.swift in Sources */,
 				C31BC28C2021219A0035FC54 /* MasterViewController.swift in Sources */,
 				C31BC28A2021219A0035FC54 /* AppDelegate.swift in Sources */,
 			);
