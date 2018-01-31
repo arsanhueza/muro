@@ -16,6 +16,10 @@
 		C31BC2A12021219A0035FC54 /* muroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31BC2A02021219A0035FC54 /* muroTests.swift */; };
 		C31BC2AC2021219A0035FC54 /* muroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31BC2AB2021219A0035FC54 /* muroUITests.swift */; };
 		C3C9CE99202258590081DDDC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C9CE98202258590081DDDC /* TableViewCell.swift */; };
+		C3C9CE9D202264720081DDDC /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C9CE9C202264720081DDDC /* CollectionViewCell.swift */; };
+		C3C9CEC7202269150081DDDC /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C9CEC5202269150081DDDC /* 1.png */; };
+		C3C9CEC8202269150081DDDC /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C9CEC6202269150081DDDC /* 0.png */; };
+		C3C9CECC202269E50081DDDC /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C9CECB202269E50081DDDC /* 2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		C31BC2AB2021219A0035FC54 /* muroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = muroUITests.swift; sourceTree = "<group>"; };
 		C31BC2AD2021219A0035FC54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3C9CE98202258590081DDDC /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		C3C9CE9C202264720081DDDC /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		C3C9CEC5202269150081DDDC /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1.png; path = ../../../../Downloads/GenericApp2018/SMS/PartesAPP/favoritoCeldayDetalle/1.png; sourceTree = "<group>"; };
+		C3C9CEC6202269150081DDDC /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 0.png; path = ../../../../Downloads/GenericApp2018/SMS/PartesAPP/favoritoCeldayDetalle/0.png; sourceTree = "<group>"; };
+		C3C9CECB202269E50081DDDC /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2.png; path = muro/2.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +117,8 @@
 				C31BC2942021219A0035FC54 /* LaunchScreen.storyboard */,
 				C31BC2972021219A0035FC54 /* Info.plist */,
 				C3C9CE98202258590081DDDC /* TableViewCell.swift */,
+				C3C9CE9C202264720081DDDC /* CollectionViewCell.swift */,
+				C3C9CEB8202266F30081DDDC /* fotitos */,
 			);
 			path = muro;
 			sourceTree = "<group>";
@@ -129,6 +139,16 @@
 				C31BC2AD2021219A0035FC54 /* Info.plist */,
 			);
 			path = muroUITests;
+			sourceTree = "<group>";
+		};
+		C3C9CEB8202266F30081DDDC /* fotitos */ = {
+			isa = PBXGroup;
+			children = (
+				C3C9CEC6202269150081DDDC /* 0.png */,
+				C3C9CEC5202269150081DDDC /* 1.png */,
+				C3C9CECB202269E50081DDDC /* 2.png */,
+			);
+			path = fotitos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,8 +258,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3C9CEC8202269150081DDDC /* 0.png in Resources */,
+				C3C9CEC7202269150081DDDC /* 1.png in Resources */,
 				C31BC2962021219A0035FC54 /* LaunchScreen.storyboard in Resources */,
 				C31BC2932021219A0035FC54 /* Assets.xcassets in Resources */,
+				C3C9CECC202269E50081DDDC /* 2.png in Resources */,
 				C31BC2912021219A0035FC54 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3C9CE9D202264720081DDDC /* CollectionViewCell.swift in Sources */,
 				C31BC28E2021219A0035FC54 /* DetailViewController.swift in Sources */,
 				C3C9CE99202258590081DDDC /* TableViewCell.swift in Sources */,
 				C31BC28C2021219A0035FC54 /* MasterViewController.swift in Sources */,

@@ -12,20 +12,20 @@ class TableViewCell: UITableViewCell,UICollectionViewDataSource,UICollectionView
 
     @IBOutlet weak var collectionView:UICollectionView!
     @IBOutlet weak var label:UILabel!
-    
+    var imagenes = [UIImage]()
     override func awakeFromNib() {
         super.awakeFromNib()
-
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return 3
     }
     
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionCell", for: indexPath)
-        cell.backgroundColor = UIColor.cyan
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionCell", for: indexPath) as! CollectionViewCell
+        cell.imagen.image = UIImage(named:String(indexPath.row) + ".png")
+        
         return cell
     }
 

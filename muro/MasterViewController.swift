@@ -78,6 +78,7 @@ class MasterViewController: UITableViewController {
 
         let object = objects[indexPath.row] as! NSDate
         cell.textLabel!.text = ""
+    
         return cell
     }
 
