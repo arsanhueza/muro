@@ -66,7 +66,7 @@ class MasterViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        return 133.0
+        return 140.0
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -76,9 +76,17 @@ class MasterViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TableViewCell
 
+        let ind = indexPath.row as Int
         let object = objects[indexPath.row] as! NSDate
-        cell.textLabel!.text = ""
     
+        if ind % 2 == 0 {
+            cell.textLabel!.text = ""
+            cell.collectionView.isHidden = false
+        }
+        else {
+        cell.textLabel!.text = object.description
+        cell.collectionView.isHidden = true
+       }
         return cell
     }
 

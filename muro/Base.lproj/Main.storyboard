@@ -124,6 +124,7 @@
                                                     <size key="customSize" width="185" height="133"/>
                                                     <connections>
                                                         <outlet property="imagen" destination="LQh-9a-cYy" id="ExT-k5-Ahz"/>
+                                                        <segue destination="0o0-QU-0U1" kind="show" id="MVk-M3-7qg"/>
                                                     </connections>
                                                 </collectionViewCell>
                                             </cells>
@@ -153,6 +154,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="708" y="-630.13493253373315"/>
+        </scene>
+        <!--Visor De ImagenesVC-->
+        <scene sceneID="A7D-YM-bzr">
+            <objects>
+                <viewController storyboardIdentifier="VisorDeImagenesVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0o0-QU-0U1" customClass="VisorDeImagenesVC" customModule="muro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lBo-7W-quA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="A9V-I5-sFa"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GgG-dB-KDw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1455.2" y="-630.13493253373315"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="r7l-gg-dq7">

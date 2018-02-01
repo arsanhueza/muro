@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TableViewCell: UITableViewCell,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
+class TableViewCell: UITableViewCell,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UINavigationControllerDelegate {
 
     @IBOutlet weak var collectionView:UICollectionView!
     @IBOutlet weak var label:UILabel!
@@ -33,12 +33,22 @@ class TableViewCell: UITableViewCell,UICollectionViewDataSource,UICollectionView
         
         return CGSize(width: 200.0, height: 133.0)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    
+//        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "VisorDeImagenesVC") as? VisorDeImagenesVC
+//        {
+////            let navigation = UINavigationController()
+//          //  let master = self.superview?.superview as! MasterViewController
+//         //   master.present(vc, animated: true, completion: nil)
+////        vc.performSegue(withIdentifier: VisorDeImagenesVC, sender: self)
+//        }
+
+    }
 
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
 }

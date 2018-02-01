@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C317E50F2023628A0045001C /* VisorDeImagenesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C317E50E2023628A0045001C /* VisorDeImagenesVC.swift */; };
 		C31BC28A2021219A0035FC54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31BC2892021219A0035FC54 /* AppDelegate.swift */; };
 		C31BC28C2021219A0035FC54 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31BC28B2021219A0035FC54 /* MasterViewController.swift */; };
 		C31BC28E2021219A0035FC54 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31BC28D2021219A0035FC54 /* DetailViewController.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C317E50E2023628A0045001C /* VisorDeImagenesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisorDeImagenesVC.swift; sourceTree = "<group>"; };
 		C31BC2862021219A0035FC54 /* muro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = muro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C31BC2892021219A0035FC54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C31BC28B2021219A0035FC54 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				C31BC2892021219A0035FC54 /* AppDelegate.swift */,
 				C31BC28B2021219A0035FC54 /* MasterViewController.swift */,
 				C31BC28D2021219A0035FC54 /* DetailViewController.swift */,
+				C317E50E2023628A0045001C /* VisorDeImagenesVC.swift */,
 				C31BC28F2021219A0035FC54 /* Main.storyboard */,
 				C31BC2922021219A0035FC54 /* Assets.xcassets */,
 				C31BC2942021219A0035FC54 /* LaunchScreen.storyboard */,
@@ -292,6 +295,7 @@
 				C31BC28E2021219A0035FC54 /* DetailViewController.swift in Sources */,
 				C3C9CE99202258590081DDDC /* TableViewCell.swift in Sources */,
 				C31BC28C2021219A0035FC54 /* MasterViewController.swift in Sources */,
+				C317E50F2023628A0045001C /* VisorDeImagenesVC.swift in Sources */,
 				C31BC28A2021219A0035FC54 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
