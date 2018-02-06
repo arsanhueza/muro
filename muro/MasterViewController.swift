@@ -56,6 +56,11 @@ class MasterViewController: UITableViewController {
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
         }
+//        else{
+//            let controller = (segue.destination as! UINavigationController).topViewController as! VisorDeImagenesVC
+//            controller.indicador = 1
+//            
+//        }
     }
 
     // MARK: - Table View

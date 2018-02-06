@@ -12,6 +12,7 @@ class VisorDeImagenesVC: UIViewController,UIScrollViewDelegate {
     var imagenes:[UIImage]!
     let scrollView = UIScrollView()
     let pageControl = UIPageControl()
+    var indicador:Int! = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,9 +33,8 @@ class VisorDeImagenesVC: UIViewController,UIScrollViewDelegate {
         let imageView = UIImageView(frame: CGRect(x: (view.frame.width * CGFloat(index)), y: view.frame.origin.y, width: view.frame.width - 160.0, height: view.frame.height - 200.0))
             imageView.image = image
         scrollView.addSubview(imageView)
-      
+            
         }
-        print(scrollView)
         view.addSubview(scrollView)
     }
     
@@ -45,10 +45,9 @@ class VisorDeImagenesVC: UIViewController,UIScrollViewDelegate {
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let x =   scrollView.contentOffset.x
         let w = scrollView.bounds.size.width
-      //  print(x)
         print(Int(x/w))
         pageControl.currentPage = Int(x/w)
-        pageControl.currentPageIndicatorTintColor = UIColor.black
+        pageControl.currentPageIndicatorTintColor = UIColor.white
         
     }
 }
