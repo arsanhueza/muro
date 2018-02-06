@@ -124,7 +124,7 @@
                                                     <size key="customSize" width="185" height="133"/>
                                                     <connections>
                                                         <outlet property="imagen" destination="LQh-9a-cYy" id="ExT-k5-Ahz"/>
-                                                        <segue destination="0o0-QU-0U1" kind="show" id="MVk-M3-7qg"/>
+                                                        <segue destination="0o0-QU-0U1" kind="showDetail" identifier="VisorDeImagenesVC" action="showViewController:sender:" id="MVk-M3-7qg"/>
                                                     </connections>
                                                 </collectionViewCell>
                                             </cells>

@@ -12,13 +12,13 @@ class MasterViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil
     var objects = [Any]()
+    var indexPathPrivado:IndexPath!
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         navigationItem.leftBarButtonItem = editButtonItem
-
         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(insertNewObject(_:)))
         navigationItem.rightBarButtonItem = addButton
         if let split = splitViewController {
@@ -56,11 +56,15 @@ class MasterViewController: UITableViewController {
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
         }
-//        else{
-//            let controller = (segue.destination as! UINavigationController).topViewController as! VisorDeImagenesVC
-//            controller.indicador = 1
-//            
-//        }
+        else if(segue.identifier == "VisorDeImagenesVC"){
+            
+            let cell = tableView.cellForRow(at: indexPathPrivado) as! TableViewCell
+            
+         //   print(cell.indicador)
+          //  let controller = (segue.destination) as! VisorDeImagenesVC
+          //  controller.indicador = cell.indicador
+        }
+        
     }
 
     // MARK: - Table View
@@ -80,7 +84,7 @@ class MasterViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TableViewCell
-
+        indexPathPrivado = indexPath
         let ind = indexPath.row as Int
         let object = objects[indexPath.row] as! NSDate
     
@@ -99,7 +103,7 @@ class MasterViewController: UITableViewController {
         // Return false if you do not want the specified item to be editable.
         return true
     }
-
+    
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             objects.remove(at: indexPath.row)

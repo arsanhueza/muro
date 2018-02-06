@@ -13,6 +13,7 @@ class TableViewCell: UITableViewCell,UICollectionViewDataSource,UICollectionView
     @IBOutlet weak var collectionView:UICollectionView!
     @IBOutlet weak var label:UILabel!
     var imagenes = [UIImage]()
+    var indicador = Int()
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -36,14 +37,12 @@ class TableViewCell: UITableViewCell,UICollectionViewDataSource,UICollectionView
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     
-//        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "VisorDeImagenesVC") as? VisorDeImagenesVC
-//        {
-////            let navigation = UINavigationController()
-//          //  let master = self.superview?.superview as! MasterViewController
-//         //   master.present(vc, animated: true, completion: nil)
-////        vc.performSegue(withIdentifier: VisorDeImagenesVC, sender: self)
-//        }
-
+       // self.indicador = indexPath.row
+        let indi = VisorDeImagenesVC()
+        indi.indicador = self.indicador
+        
+        
+        
     }
 
 
