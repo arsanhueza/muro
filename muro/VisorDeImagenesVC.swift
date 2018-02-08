@@ -28,9 +28,8 @@ class VisorDeImagenesVC: UIViewController,UIScrollViewDelegate {
         view.addSubview(pageControl)
         pageControl.numberOfPages = imagenes.count
         pageControl.currentPage = 0
-    
-        print(indicador)
         
+        print(self.indicador)
         for (index, image) in imagenes.enumerated() {
             let imageView = UIImageView(frame: CGRect(x: (view.frame.width * CGFloat(index)), y: view.frame.origin.y, width: view.frame.width - 160.0, height: view.frame.height - 200.0))
             imageView.image = image

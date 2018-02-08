@@ -59,10 +59,8 @@ class MasterViewController: UITableViewController {
         else if(segue.identifier == "VisorDeImagenesVC"){
             
             let cell = tableView.cellForRow(at: indexPathPrivado) as! TableViewCell
-            
-         //   print(cell.indicador)
-          //  let controller = (segue.destination) as! VisorDeImagenesVC
-          //  controller.indicador = cell.indicador
+            let controller = (segue.destination) as! VisorDeImagenesVC
+            controller.indicador = cell.indicador
         }
         
     }

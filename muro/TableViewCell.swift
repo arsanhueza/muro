@@ -35,16 +35,22 @@ class TableViewCell: UITableViewCell,UICollectionViewDataSource,UICollectionView
         return CGSize(width: 200.0, height: 133.0)
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//
+//       // self.indicador = indexPath.row
+//        let indi = VisorDeImagenesVC()
+//        indi.indicador = self.indicador
+//        print("should")
+//
+//    }
     
-       // self.indicador = indexPath.row
-        let indi = VisorDeImagenesVC()
-        indi.indicador = self.indicador
+    func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
         
+        print("should")
+        self.indicador = indexPath.row
         
-        
+        return true
     }
-
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
