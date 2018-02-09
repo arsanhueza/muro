@@ -12,7 +12,7 @@ class MasterViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil
     var objects = [Any]()
-    var indexPathPrivado:IndexPath!
+    var point:CGPoint!
 
 
     override func viewDidLoad() {
@@ -34,7 +34,6 @@ class MasterViewController: UITableViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     @objc
@@ -58,9 +57,9 @@ class MasterViewController: UITableViewController {
         }
         else if(segue.identifier == "VisorDeImagenesVC"){
             
-            let cell = tableView.cellForRow(at: indexPathPrivado) as! TableViewCell
-            let controller = (segue.destination) as! VisorDeImagenesVC
-            controller.indicador = cell.indicador
+//            let cell = tableView.cellForRow(at:) as! TableViewCell
+//            let controller = (segue.destination) as! VisorDeImagenesVC
+//            controller.indicador = cell.indicador
         }
         
     }
@@ -82,7 +81,6 @@ class MasterViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TableViewCell
-        indexPathPrivado = indexPath
         let ind = indexPath.row as Int
         let object = objects[indexPath.row] as! NSDate
     
@@ -98,7 +96,6 @@ class MasterViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
         return true
     }
     
@@ -109,8 +106,11 @@ class MasterViewController: UITableViewController {
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
         }
+        self.tableView.reloadData()
     }
 
-
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
 }
 

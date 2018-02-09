@@ -14,6 +14,7 @@ class TableViewCell: UITableViewCell,UICollectionViewDataSource,UICollectionView
     @IBOutlet weak var label:UILabel!
     var imagenes = [UIImage]()
     var indicador = Int()
+    var posicion = CGPoint()
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -35,25 +36,19 @@ class TableViewCell: UITableViewCell,UICollectionViewDataSource,UICollectionView
         return CGSize(width: 200.0, height: 133.0)
     }
     
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//
-//       // self.indicador = indexPath.row
-//        let indi = VisorDeImagenesVC()
-//        indi.indicador = self.indicador
-//        print("should")
-//
-//    }
-    
     func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
         
-        print("should")
         self.indicador = indexPath.row
+        self.posicion = (collectionView.superview?.superview?.frame.origin)!
         
+        print(self.superview?.superview)
         return true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+        
+        
     }
 
 }
