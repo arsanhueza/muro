@@ -13,7 +13,7 @@ class ViewController: UIViewController,UIVideoEditorControllerDelegate {
  @IBOutlet weak var picker:UIImagePickerController!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        picker.delegate = self as! UIImagePickerControllerDelegate & UINavigationControllerDelegate
         // Do any additional setup after loading the view.
     }
 
