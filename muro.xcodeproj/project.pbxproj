@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C30671252034AEBA00BFB47F /* AnimatableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30671232034AEBA00BFB47F /* AnimatableImageView.swift */; };
+		C30671262034AEBA00BFB47F /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30671242034AEBA00BFB47F /* Utilities.swift */; };
 		C317E50F2023628A0045001C /* VisorDeImagenesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C317E50E2023628A0045001C /* VisorDeImagenesVC.swift */; };
 		C31BC28A2021219A0035FC54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31BC2892021219A0035FC54 /* AppDelegate.swift */; };
 		C31BC28C2021219A0035FC54 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31BC28B2021219A0035FC54 /* MasterViewController.swift */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C30671232034AEBA00BFB47F /* AnimatableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatableImageView.swift; sourceTree = "<group>"; };
+		C30671242034AEBA00BFB47F /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		C317E50E2023628A0045001C /* VisorDeImagenesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisorDeImagenesVC.swift; sourceTree = "<group>"; };
 		C31BC2862021219A0035FC54 /* muro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = muro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C31BC2892021219A0035FC54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +127,8 @@
 				C31BC2972021219A0035FC54 /* Info.plist */,
 				C3C9CE98202258590081DDDC /* TableViewCell.swift */,
 				C3C9CE9C202264720081DDDC /* CollectionViewCell.swift */,
+				C30671232034AEBA00BFB47F /* AnimatableImageView.swift */,
+				C30671242034AEBA00BFB47F /* Utilities.swift */,
 				C3C9CEB8202266F30081DDDC /* fotitos */,
 				C32C9E4D203242B0000F5FDE /* ViewController.swift */,
 			);
@@ -294,11 +300,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C30671252034AEBA00BFB47F /* AnimatableImageView.swift in Sources */,
 				C3C9CE9D202264720081DDDC /* CollectionViewCell.swift in Sources */,
 				C31BC28E2021219A0035FC54 /* DetailViewController.swift in Sources */,
 				C3C9CE99202258590081DDDC /* TableViewCell.swift in Sources */,
 				C31BC28C2021219A0035FC54 /* MasterViewController.swift in Sources */,
 				C32C9E4E203242B0000F5FDE /* ViewController.swift in Sources */,
+				C30671262034AEBA00BFB47F /* Utilities.swift in Sources */,
 				C317E50F2023628A0045001C /* VisorDeImagenesVC.swift in Sources */,
 				C31BC28A2021219A0035FC54 /* AppDelegate.swift in Sources */,
 			);
