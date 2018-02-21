@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TableViewCell: UITableViewCell,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UINavigationControllerDelegate {
+class CTableViewCell: UITableViewCell,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UINavigationControllerDelegate {
 
     @IBOutlet weak var collectionView:UICollectionView!
     @IBOutlet weak var label:UILabel!
