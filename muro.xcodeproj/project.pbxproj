@@ -19,9 +19,9 @@
 		C31BC2A12021219A0035FC54 /* muroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31BC2A02021219A0035FC54 /* muroTests.swift */; };
 		C31BC2AC2021219A0035FC54 /* muroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31BC2AB2021219A0035FC54 /* muroUITests.swift */; };
 		C32C9E4E203242B0000F5FDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32C9E4D203242B0000F5FDE /* ViewController.swift */; };
+		C3ABCCA820BC869900469D12 /* CTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ABCCA720BC869900469D12 /* CTableViewCell.swift */; };
 		C3BD35E5202A44550067C418 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BD35E2202A44550067C418 /* 1.png */; };
 		C3BD35E9202A44970067C418 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BD35E8202A44970067C418 /* 0.png */; };
-		C3C9CE99202258590081DDDC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C9CE98202258590081DDDC /* TableViewCell.swift */; };
 		C3C9CE9D202264720081DDDC /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C9CE9C202264720081DDDC /* CollectionViewCell.swift */; };
 		C3C9CECC202269E50081DDDC /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C9CECB202269E50081DDDC /* 2.png */; };
 /* End PBXBuildFile section */
@@ -62,9 +62,9 @@
 		C31BC2AB2021219A0035FC54 /* muroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = muroUITests.swift; sourceTree = "<group>"; };
 		C31BC2AD2021219A0035FC54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C32C9E4D203242B0000F5FDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C3ABCCA720BC869900469D12 /* CTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTableViewCell.swift; sourceTree = "<group>"; };
 		C3BD35E2202A44550067C418 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		C3BD35E8202A44970067C418 /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
-		C3C9CE98202258590081DDDC /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		C3C9CE9C202264720081DDDC /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		C3C9CECB202269E50081DDDC /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2.png; path = muro/2.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -117,6 +117,7 @@
 		C31BC2882021219A0035FC54 /* muro */ = {
 			isa = PBXGroup;
 			children = (
+				C3ABCCA720BC869900469D12 /* CTableViewCell.swift */,
 				C31BC2892021219A0035FC54 /* AppDelegate.swift */,
 				C31BC28B2021219A0035FC54 /* MasterViewController.swift */,
 				C31BC28D2021219A0035FC54 /* DetailViewController.swift */,
@@ -125,7 +126,6 @@
 				C31BC2922021219A0035FC54 /* Assets.xcassets */,
 				C31BC2942021219A0035FC54 /* LaunchScreen.storyboard */,
 				C31BC2972021219A0035FC54 /* Info.plist */,
-				C3C9CE98202258590081DDDC /* TableViewCell.swift */,
 				C3C9CE9C202264720081DDDC /* CollectionViewCell.swift */,
 				C30671232034AEBA00BFB47F /* AnimatableImageView.swift */,
 				C30671242034AEBA00BFB47F /* Utilities.swift */,
@@ -301,9 +301,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C30671252034AEBA00BFB47F /* AnimatableImageView.swift in Sources */,
+				C3ABCCA820BC869900469D12 /* CTableViewCell.swift in Sources */,
 				C3C9CE9D202264720081DDDC /* CollectionViewCell.swift in Sources */,
 				C31BC28E2021219A0035FC54 /* DetailViewController.swift in Sources */,
-				C3C9CE99202258590081DDDC /* TableViewCell.swift in Sources */,
 				C31BC28C2021219A0035FC54 /* MasterViewController.swift in Sources */,
 				C32C9E4E203242B0000F5FDE /* ViewController.swift in Sources */,
 				C30671262034AEBA00BFB47F /* Utilities.swift in Sources */,
