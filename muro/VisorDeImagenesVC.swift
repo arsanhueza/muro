@@ -13,6 +13,7 @@ class VisorDeImagenesVC: UIViewController,UIScrollViewDelegate {
     let scrollView = UIScrollView()
     let pageControl = UIPageControl()
     var indicador:Int! = nil
+    let userDefaults = UserDefaults()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,15 +28,16 @@ class VisorDeImagenesVC: UIViewController,UIScrollViewDelegate {
         pageControl.frame = CGRect(x: view.frame.width/2.0 - 20.0, y: scrollView.frame.maxY, width: 50.0, height: 30.0)
         view.addSubview(pageControl)
         pageControl.numberOfPages = imagenes.count
-        pageControl.currentPage = indicador
         
-//        print(self.indicador)
+        let indi = userDefaults.integer(forKey: "indicadorZoom")
+        pageControl.currentPage = indi
+
         for (index, image) in imagenes.enumerated() {
             let imageView = UIImageView(frame: CGRect(x: (view.frame.width * CGFloat(index)), y: view.frame.origin.y, width: view.frame.width - 160.0, height: view.frame.height - 200.0))
             imageView.image = image
         scrollView.addSubview(imageView)
-        scrollView.contentOffset.x = (view.frame.width * CGFloat(indicador))
-    }
+        scrollView.contentOffset.x = (view.frame.width * CGFloat(indi))
+}
         view.addSubview(scrollView)
     }
     
