@@ -54,16 +54,7 @@ class MasterViewController: UITableViewController,UICollectionViewDelegate {
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
-        }
-        else if(segue.identifier == "VisorDeImagenesVC"){
-
-    let controller = (segue.destination) as! VisorDeImagenesVC
-        
-        //acá pasar el indicador correspondiente
-      //  controller.indicador = 1
-        
-        }
-    }
+        }}
 
     // MARK: - Table View
 
