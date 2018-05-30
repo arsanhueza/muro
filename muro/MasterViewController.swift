@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MasterViewController: UITableViewController {
+class MasterViewController: UITableViewController,UICollectionViewDelegate {
 
     var detailViewController: DetailViewController? = nil
     var objects = [Any]()
@@ -56,12 +56,13 @@ class MasterViewController: UITableViewController {
             }
         }
         else if(segue.identifier == "VisorDeImagenesVC"){
-            
-//            let cell = tableView.cellForRow(at:) as! TableViewCell
-//            let controller = (segue.destination) as! VisorDeImagenesVC
-//            controller.indicador = cell.indicador
-        }
+
+    let controller = (segue.destination) as! VisorDeImagenesVC
         
+        //acá pasar el indicador correspondiente
+      //  controller.indicador = 1
+        
+        }
     }
 
     // MARK: - Table View
@@ -91,7 +92,7 @@ class MasterViewController: UITableViewController {
         else {
         cell.textLabel!.text = object.description
         cell.collectionView.isHidden = true
-       }
+    }
         return cell
     }
 

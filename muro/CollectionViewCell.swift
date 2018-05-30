@@ -16,4 +16,6 @@ class CollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         
     }
+    
+    
 }
