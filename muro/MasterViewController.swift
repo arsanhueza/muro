@@ -41,6 +41,7 @@ class MasterViewController: UITableViewController,UICollectionViewDelegate {
         objects.insert(NSDate(), at: 0)
         let indexPath = IndexPath(row: 0, section: 0)
         tableView.insertRows(at: [indexPath], with: .automatic)
+        tableView.reloadData()
     }
 
     // MARK: - Segues
