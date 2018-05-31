@@ -54,7 +54,8 @@ class MasterViewController: UITableViewController,UICollectionViewDelegate {
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
-        }}
+        }
+    }
 
     // MARK: - Table View
 
