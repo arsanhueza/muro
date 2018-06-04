@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5170296320B050602A4FFB29 /* Pods_muro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 588D04C975AFA4D97EAD1638 /* Pods_muro.framework */; };
 		C30671252034AEBA00BFB47F /* AnimatableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30671232034AEBA00BFB47F /* AnimatableImageView.swift */; };
 		C30671262034AEBA00BFB47F /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30671242034AEBA00BFB47F /* Utilities.swift */; };
 		C317E50F2023628A0045001C /* VisorDeImagenesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C317E50E2023628A0045001C /* VisorDeImagenesVC.swift */; };
@@ -44,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		588D04C975AFA4D97EAD1638 /* Pods_muro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_muro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70F92D6181940E693EFC00A0 /* Pods-muro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-muro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-muro/Pods-muro.debug.xcconfig"; sourceTree = "<group>"; };
 		C30671232034AEBA00BFB47F /* AnimatableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatableImageView.swift; sourceTree = "<group>"; };
 		C30671242034AEBA00BFB47F /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		C317E50E2023628A0045001C /* VisorDeImagenesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisorDeImagenesVC.swift; sourceTree = "<group>"; };
@@ -67,6 +70,7 @@
 		C3BD35E8202A44970067C418 /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
 		C3C9CE9C202264720081DDDC /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		C3C9CECB202269E50081DDDC /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2.png; path = muro/2.png; sourceTree = SOURCE_ROOT; };
+		FA01D71837A7EABECC3E0E3A /* Pods-muro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-muro.release.xcconfig"; path = "Pods/Target Support Files/Pods-muro/Pods-muro.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5170296320B050602A4FFB29 /* Pods_muro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +99,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52C3B77B9A90B839CD3CDA94 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				588D04C975AFA4D97EAD1638 /* Pods_muro.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C31BC27D2021219A0035FC54 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +114,8 @@
 				C31BC29F2021219A0035FC54 /* muroTests */,
 				C31BC2AA2021219A0035FC54 /* muroUITests */,
 				C31BC2872021219A0035FC54 /* Products */,
+				DBBC8C5BA22CB037685BE2CD /* Pods */,
+				52C3B77B9A90B839CD3CDA94 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,6 +178,15 @@
 			path = fotitos;
 			sourceTree = "<group>";
 		};
+		DBBC8C5BA22CB037685BE2CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70F92D6181940E693EFC00A0 /* Pods-muro.debug.xcconfig */,
+				FA01D71837A7EABECC3E0E3A /* Pods-muro.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -170,9 +194,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C31BC2B02021219A0035FC54 /* Build configuration list for PBXNativeTarget "muro" */;
 			buildPhases = (
+				6CB00044196901C1814C11EE /* [CP] Check Pods Manifest.lock */,
 				C31BC2822021219A0035FC54 /* Sources */,
 				C31BC2832021219A0035FC54 /* Frameworks */,
 				C31BC2842021219A0035FC54 /* Resources */,
+				6853B4A77A3244C4FBCAC7E2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -294,6 +320,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6853B4A77A3244C4FBCAC7E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-muro/Pods-muro-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReadMoreTextView/ReadMoreTextView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReadMoreTextView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-muro/Pods-muro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CB00044196901C1814C11EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-muro-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C31BC2822021219A0035FC54 /* Sources */ = {
@@ -476,6 +541,7 @@
 		};
 		C31BC2B12021219A0035FC54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70F92D6181940E693EFC00A0 /* Pods-muro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -491,6 +557,7 @@
 		};
 		C31BC2B22021219A0035FC54 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA01D71837A7EABECC3E0E3A /* Pods-muro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

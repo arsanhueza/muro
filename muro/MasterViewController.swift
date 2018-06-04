@@ -13,6 +13,7 @@ class MasterViewController: UITableViewController,UICollectionViewDelegate {
     var detailViewController: DetailViewController? = nil
     var objects = [Any]()
     var point:CGPoint!
+    var tamanoCelda = CGFloat()
 
 
     override func viewDidLoad() {
