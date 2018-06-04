@@ -1,0 +1,16 @@
+PODS:
+  - ReadMoreTextView (3.0.0)
+
+DEPENDENCIES:
+  - ReadMoreTextView
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ReadMoreTextView
+
+SPEC CHECKSUMS:
+  ReadMoreTextView: d872de55c5850c702f8d8ce591fb70e5d00c873a
+
+PODFILE CHECKSUM: 29f76cb0d507f97e0776ee42efa944547d41c1e2
+
+COCOAPODS: 1.5.3
