@@ -67,7 +67,7 @@ class MasterViewController: UITableViewController,UICollectionViewDelegate {
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        return 140.0
+        return tamanoCelda
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -77,16 +77,36 @@ class MasterViewController: UITableViewController,UICollectionViewDelegate {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TableViewCell
         let ind = indexPath.row as Int
-        let object = objects[indexPath.row] as! NSDate
-    
+        
+        cell.collectionView.frame = CGRect(x: 15.0, y: 30.0, width: view.frame.size.width - 30.0, height: 100.0)
+
         if ind % 2 == 0 {
-            cell.textLabel!.text = ""
             cell.collectionView.isHidden = false
-        }
+            print(cell.collectionView.frame.maxY)
+            cell.label?.frame = CGRect(x: 15.0, y: 10.0, width: view.frame.size.width - 30.0, height:0.0)
+            let maximumLabelSizeTitulo = CGSize(width: (self.view.frame.size.width - 100.0), height: 40000.0)
+            cell.label.sizeThatFits(maximumLabelSizeTitulo)
+            cell.label.font = UIFont.boldSystemFont(ofSize: 14.0)
+            cell.label!.text = "Encabezado para la imagen de ejemplo:"
+            cell.label?.textAlignment = .left
+            cell.label.numberOfLines = 0
+            cell.label?.sizeToFit()
+            tamanoCelda = (cell.collectionView.frame.size.height + cell.label.frame.size.height) + 30.0
+}
         else {
-        cell.textLabel!.text = object.description
+            cell.label?.frame = CGRect(x: 15.0, y: 10.0, width: view.frame.size.width - 30.0, height:0.0)
+            let maximumLabelSizeTitulo = CGSize(width: (self.view.frame.size.width - 100.0), height: 40000.0)
+            cell.label.sizeThatFits(maximumLabelSizeTitulo)
+            cell.label.font = UIFont.boldSystemFont(ofSize: 14.0)
+            cell.label!.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            cell.label?.textAlignment = .left
+            cell.label.numberOfLines = 0
+            cell.label?.sizeToFit()
+
         cell.collectionView.isHidden = true
-    }
+            tamanoCelda = cell.label.frame.size.height + 30.0
+        }
+        
         return cell
     }
 
