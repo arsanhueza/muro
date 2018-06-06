@@ -78,8 +78,7 @@ class MasterViewController: UITableViewController,UICollectionViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TableViewCell
         let ind = indexPath.row as Int
         
-        cell.collectionView.frame = CGRect(x: 15.0, y: 30.0, width: view.frame.size.width - 30.0, height: 100.0)
-
+        cell.collectionView.frame = CGRect(x: 15.0, y: 35.0, width: view.frame.size.width - 30.0, height: 100.0)
         if ind % 2 == 0 {
             cell.collectionView.isHidden = false
             print(cell.collectionView.frame.maxY)
